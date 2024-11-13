@@ -1,0 +1,15 @@
+apiVersion: se.quencer.io/v1alpha1
+kind: DNSIntegration
+metadata:
+  name: desec
+spec:
+  provider:
+    name: desec
+    image: ghcr.io/pier-oliviert/providers-desec:dev
+  zones:
+    - whatever.com
+  secretRef:
+    name: desec
+    keys:
+      - key: token
+        name: DESEC_TOKEN

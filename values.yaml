@@ -1,0 +1,5 @@
+controller:
+  image: ghcr.io/pier-oliviert/phonebook:dev
+serviceAccount:
+  annotations:
+    eks.amazonaws.com/role-arn: "arn:aws:iam::463207047409:role/Sequencer-DNS-ServiceAccount"
